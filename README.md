@@ -1,1 +1,10 @@
-# preCollege-Projects
+# preCollege Projects
+I have been coding since Year 6.
+I have still yet to find my previous works.
+
+TODO: FIND PREVIOUS PROJECTS
+- (HTML+CSS) Tumblr blog design <GONE>
+- Year 9:  (HTML+CSS x javascript) Web Design projects
+- Year 10: (java) Pre-AP Computer Science projects
+- Year 11: (java) AP Computer Science projects
+- Year 12: (SQL x C#) thesis Report System project

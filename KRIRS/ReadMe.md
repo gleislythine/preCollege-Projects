@@ -12,7 +12,7 @@ But here's the gist of its purpose to give meaning to the work, without it being
 ##### Statement of the Problem
 The fundamental problem in the current system’s manual processes (is that the School) uses the manual record-keeping system. It wastes a lot of paper, pens, toner and ink cartridges, and money. Generating the Key Result Indicators involves over complicated steps of receiving, inputting, and passing of data. This system is very labour intensive, does not certify that the data is always accurate, and has delayed delivery of the monthly results. This brings forth unneeded repetition of verification that can be enhanced with a simpler, more effective system.
 
-~~TL/DR: If it can be automated or create a software for it to make your lives easier, why not make use of that, (the School)??~~
+~~TL/DR: If it can be automated or use a software for that work to make your lives easier, why not make use of that??~~
 
 The Key Result Indicators Report Software goals would include:
   1. an instantaneous report for a monthly basis.

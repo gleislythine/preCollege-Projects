@@ -1,0 +1,87 @@
+.sidebar{
+	width: 25vw;
+	height: 97vh;
+	background-color: rgba(128, 128, 128, 0.5);
+	float: left;
+	}
+	.insideSB{
+	margin-top: 50%;
+	padding: 5%;
+	font-family: Times New Roman;
+	text-align: center;
+	color: #FFFFFF;
+	letter-spacing: 2px;
+	font-size: 21px;
+	font-weight: bold;
+	font-variant: small-caps;
+	}
+	.theForm{
+	width: 68vw;
+	height: 90vh;
+	background-color: rgba(128, 128, 128, 0.5);
+	float: right;
+	padding: 2%;
+	}
+	.insideForm{
+	height: 75vh;
+	font-family: Times New Roman;
+	color: lightgreen;
+	line-height: 200%;
+	}
+	.insideForm > img{
+	height: 450px;
+	}
+	img{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+	}
+	img.pcmrhome{
+	margin-top: 10%;
+	margin-bottom: 10%;
+	}
+	button.home{
+	font-family: Courier New;
+  color: #ffffff;
+  background: #3498db;
+  padding: 10px 20px 10px 20px;
+	}
+	button.home:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+input{
+width: 75%;
+float: right;
+}
+h2{
+ color: #44d62c;
+ font-family: Courier;
+ font-size: 30px;
+ text-align: center;
+ font-weight: normal;
+ margin: 0;
+}
+	select{
+	width: 100%;
+	font-family: Century Gothic;
+	}
+	select.space{
+	margin-bottom: 4%;
+	}
+	option{
+	padding: 5%;
+	}
+	#Bethesda{
+	display: none;
+	}
+	#Blizzard{
+	display: none;
+	}
+	#Sony{
+	display: none;
+	}
+	#Valve{
+	display: none;
+	}

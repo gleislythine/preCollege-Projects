@@ -1,0 +1,14 @@
+	.bck {
+	  position: absolute;
+	  width: 228px;
+	  display: inline-block;
+	  border: solid black 2px;
+	  padding: 1%;
+	  overflow: hidden;
+	  background: lightgreen;
+	}
+	
+	input {
+	  text-align: right;
+	  left: 0;
+	}

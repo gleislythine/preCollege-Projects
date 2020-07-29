@@ -1,12 +1,6 @@
 Lesson 1 - Introduction to the Course</br>
-Lesson Assignment</br>
-
 Lesson 2 - Formatting Text and CSS Styles</br>
-Lesson Assignment</br>
-
 Lesson 3 - Formatting Block Text and Sections</br>
-Lesson Assignment</br>
-
 Lesson 4 - Images, Divisions and Links</br>
 Lesson Assignment</br>
 

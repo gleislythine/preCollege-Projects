@@ -1,0 +1,42 @@
+	input {
+	  color: black;
+	  font-style: normal;
+	  margin-right: 25px;
+	}
+	
+	label {
+	  display: inline-block;
+	  width: 100px;
+	}
+	
+	button {
+	  position: relative;
+	  top: 50%;
+	  left: 15%;
+	}
+	
+	.container {
+	  width: 683px;
+	  overflow: hidden;
+	  position: absolute;
+	}
+	
+	.theInputs {
+	  float: left;
+	}
+	
+	.theBox {
+	  overflow: hidden;
+	  color: black;
+	  border: 1px solid black;
+	  float: left;
+	  width: 300px;
+	  padding: 2%;
+	}
+	
+	span {
+	  color: green;
+	  font-family: century gothic;
+	  font-weight: bold;
+	  text-decoration: underline;
+	}

@@ -1,0 +1,81 @@
+body {
+    background-image: url("http://img.lapseshot.com/images/1.bp.blogspot.com/-L0v_qh1daOI/UPDUASSNd8I/AAAAAAAAAAM/vgczq_iUecY/s1600/Blood_Spatter_by_Zeds_Stock.jpg");
+	margin: 0;
+	padding: 0;
+}
+div.box1 {
+    width:75%;
+    background-color:rgba(255, 255, 255, 0.75);
+    color:black;
+    border:1px solid lightgray;
+    font-size:20px;
+    position:absolute;
+    padding:5px;
+	margin-top: 5%;
+	margin-left:12%;
+}
+
+#cssmenu ul {
+margin-top: 0;
+  background: black;
+  height: 50px;
+  list-style: none;
+  width: 100%;
+  z-index:1;
+  padding:5px;
+  font-family:arial;
+  font-size:17px;
+  padding:5px;
+  position:fixed;
+}
+#cssmenu li {
+  float: left;
+  padding: 0px 0px 0px 15px;
+}
+#cssmenu ul li {
+  color: white;
+  display: block;
+  font-weight: normal;
+  line-height: 50px;
+  margin: 0px;
+  padding: 0px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+#cssmenu li:hover {
+  background: white;
+  color: black;
+}
+#cssmenu li ul {
+  display: none;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  width: 200px;
+}
+#cssmenu li:hover ul {
+  display: block;
+}
+#cssmenu li li {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  width: 200px;
+  background: black;
+}
+#cssmenu li ul li {
+  display: block;
+  height: 50px;
+  font-size: 12px;
+  font-style: normal;
+  margin: 0px;
+  padding: 0px 10px 0px 15px;
+  text-align: left;
+}
+#cssmenu li ul li:hover,
+#cssmenu li ul li:hover ul {
+  color: gold;
+  text-decoration: none;
+  background: gray;
+}

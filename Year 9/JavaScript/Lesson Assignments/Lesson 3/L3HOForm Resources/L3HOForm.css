@@ -1,0 +1,32 @@
+.bckgd {
+  position: absolute;
+  width: 700px;
+  display: inline-block;
+  border: solid black 2px;
+  padding: 1%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.bck {
+  position: relative;
+  width: 225px;
+  display: inline-block;
+  overflow: hidden;
+  text-align: left;
+  background: lightgreen;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  text-align: center;
+  color: blue;
+  line-height: 5%;
+  font-family: century gothic;
+  margin-top: 0;
+}
+
+button {
+  padding: 1%;
+}

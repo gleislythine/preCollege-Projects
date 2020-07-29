@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+
+<body style="padding:0px; margin:0px; background-color:#000;">
+  <script type="text/javascript" src="L8A Resources/l8a.js"></script>
+  <script>
+    jssor_1_slider_init = function() {
+
+      var jssor_1_options = {
+        $AutoPlay: false,
+        $ThumbnailNavigatorOptions: {
+          $Class: $JssorThumbnailNavigator$,
+          $Cols: 9,
+          $NoDrag: true
+        }
+      };
+
+      var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+      //responsive code begin
+      //you can remove responsive code if you don't want the slider scales while window resizing
+      function ScaleSlider() {
+        var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+        if (refSize) {
+          refSize = document.getElementById('jssor_1').style.width = '100%';
+          refSize = document.getElementById('jssor_1').style.height = '85vh';
+          jssor_1_slider.$ScaleWidth(refSize);
+        } else {
+          window.setTimeout(ScaleSlider, 30);
+        }
+      }
+      ScaleSlider();
+      $Jssor$.$AddEvent(window, "load", ScaleSlider);
+      $Jssor$.$AddEvent(window, "resize", $Jssor$.$WindowResizeFilter(window, ScaleSlider));
+      $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+      //responsive code end
+    };
+  </script>
+
+  <style>
+    .jssort12 .w {
+      cursor: pointer;
+      position: absolute;
+      WIDTH: 99px;
+      HEIGHT: 28px;
+      border: 1px solid gray;
+      top: 0px;
+      left: -1px;
+    }
+    
+    .jssort12 .p {
+      position: absolute;
+      width: 100px;
+      height: 30px;
+      top: 0;
+      left: 0;
+      padding: 0px;
+    }
+    
+    .jssort12 .pav .w,
+    .jssort12 .pdn .w {
+      border-bottom: 1px solid #666;
+    }
+    
+    .jssort12 .c {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      line-height: 28px;
+      text-align: center;
+      color: #000;
+      font-size: 13.0px;
+    }
+    
+    .jssort12 .p .c,
+    .jssort12 .pav:hover .c {
+      background-color: #eee;
+    }
+    
+    .jssort12 .pav .c,
+    .jssort12 .p:hover .c {
+      background-color: #000;
+	  color: #fff
+    }
+    
+    img {
+      height: 69vh;
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+    }
+    
+    header {
+      font-family: Century Gothic;
+      color: white;
+      text-align: center;
+      letter-spacing: 5px;
+    }
+    
+    .1 {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 598px;
+    }
+    
+    .2 {
+      margin: 10px;
+      overflow: hidden;
+    }
+	.u
+	{
+	cursor: default; 
+	position: relative; 
+	top: 29px; 
+	left: 0px; 
+	width: 100vw !important; 
+	height: 89vh !important; 
+	overflow: hidden; 
+	border: 1px solid #adadad"
+	}
+	audio
+	{
+	width: 100%;
+	}
+  </style>
+
+  <header>
+    <h1>How to Play: One-Man Hide and Seek!</h1></header>
+  <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width:90vw; height: 85vh; overflow: hidden; visibility: hidden; background-color: #ffffff;">
+    <div data-u="slides" class="u">
+      <div style="display: none;">
+        <div class="1">
+          <div class="2"><img src="L8A Resources/photo/intro.jpg">
+            <br><audio controls autoplay>
+			<source src="L8A Resources/vbs/intro.mp3" type="audio/mpeg"></audio>One-Man Hide and Seek is a fun game. There are unseen people always wandering restlessly looking for people like you to play with!</div>
+        </div>
+        <div data-u="thumb">Introduction</div>
+      </div>
+      <div style="display: none;">
+        <div class="1">
+          <div class="2"><img src="L8A Resources/photo/1.jpg">
+            <br><audio controls autoplay>
+			<source src="L8A Resources/vbs/step 1.mp3" type="audio/mpeg"></audio>Give a name to your doll. The name can be any but your own.</div>
+        </div>
+        <div data-u="thumb">Step 1</div>
+      </div>
+      <div style="display: none;">
+        <div class="1">
+          <div class="2"><img src="L8A Resources/photo/2.jpg">
+            <br><audio autoplay="autoplay" controls="controls" src="L8A Resources/vbs/step 2.mp3"></audio>When the time is 3 AM, say "(your name) is the first it," to the doll three times.</div>
+        </div>
+        <div data-u="thumb">Step 2</div>
+      </div>
+      <div style="display: none;">
+        <div class="1">
+          <div class="2"><img src="L8A Resources/photo/3.jpg">
+            <br><audio controls autoplay>
+			<source src="L8A Resources/vbs/step 3.mp3" type="audio/mpeg"></audio>Go to the bathroom, and put the doll into the water-filled bathtub.</div>
+        </div>
+        <div data-u="thumb">Step 3</div>
+      </div>
+      <div style="display: none;">
+        <div class="1">
+          <div class="2"><img src="L8A Resources/photo/4.jpg">
+            <br><audio controls autoplay>
+			<source src="L8A Resources/vbs/step 4.mp3" type="audio/mpeg"></audio>Turn off all of the lights in your house, go back to the hiding place, and switch on the TV.</div>
+        </div>
+        <div data-u="thumb">Step 4</div>
+      </div>
+      <div style="display: none;">
+        <div class="1">
+          <div class="2"><img src="L8A Resources/photo/5.png">
+            <br><audio controls autoplay>
+			<source src="L8A Resources/vbs/step 5.mp3" type="audio/mpeg"></audio>After counting to ten with your eyes closed, return to the bathroom with the edged tool in your hand.</div>
+        </div>
+        <div data-u="thumb">Step 5</div>
+      </div>
+      <div style="display: none;">
+        <div class="1">
+          <div class="2"><img src="L8A Resources/photo/6.jpg">
+            <br><audio controls autoplay>
+			<source src="L8A Resources/vbs/step 6.mp3" type="audio/mpeg"></audio>Go to the bathtub, and, say to the doll, "I have found you, (the doll's name)." Stab the doll with the edged tool. By cutting the thread off, you break the seal and release the spirit or spirits you have trapped.</div>
+        </div>
+        <div data-u="thumb">Step 6</div>
+      </div>
+      <div style="display: none;">
+        <div class="1">
+          <div class="2"><img src="L8A Resources/photo/7.jpg">
+            <br><audio controls autoplay>
+			<source src="L8A Resources/vbs/step 7.mp3" type="audio/mpeg"></audio>Say, "You are the next it, (the doll's name)," as you take the doll out of the bathtub and leave it on the counter in the bathroom.</div>
+        </div>
+        <div data-u="thumb">Step 7</div>
+      </div>
+      <div style="display: none;">
+        <div class="1">
+          <div class="2"><img src="L8A Resources/photo/8.jpg">
+            <br><audio controls autoplay>
+			<source src="L8A Resources/vbs/step 8.mp3" type="audio/mpeg"></audio>As soon as you have put the doll down, run back to the hiding place, and hide.</div>
+        </div>
+        <div data-u="thumb">Step 8</div>
+      </div>
+    </div>
+    <!-- Thumbnail Navigator -->
+    <div data-u="thumbnavigator" class="jssort12" style="position:absolute;left:0px;top:0px;width:900%;height:30px;">
+      <!-- Thumbnail Item Skin Begin -->
+      <div data-u="slides" style="cursor: default; top: 0px; left: 0px; border-left: 1px solid gray;">
+        <div data-u="prototype" class="p">
+          <div class="w">
+            <div data-u="thumbnailtemplate" class="c"></div>
+          </div>
+        </div>
+      </div>
+      <script>
+        jssor_1_slider_init();
+      </script>
+
+      <!-- #endregion Jssor Slider End -->
+</body>
+
+</html>

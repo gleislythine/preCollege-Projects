@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Lesson 6: Loop Exercise 1</title>
+    <style>
+      .numbox {
+        width: 50px;
+        height: 50px;
+        border: 0.5px solid black;
+        display: inline-block;
+        font-size: 40px;
+        text-align: center;
+        margin: 1px;
+      }
+      
+      .container {
+        width: 580px;
+        overflow: hidden;
+        position: absolute;
+        text-align: center;
+      }
+      
+      #res {
+        text-align: right;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <script>
+        var i = 1;
+        while (i < 51) {
+          document.writeln('<div class="numbox" style="background: white" name="numButt" onClick="click1(this);">' + i + '</div>');
+          i++;
+          if (i == 11) {
+            document.writeln("<br>");
+          }
+          if (i == 21) {
+            document.writeln("<br>");
+          }
+          if (i == 31) {
+            document.writeln("<br>");
+          }
+          if (i == 41) {
+            document.writeln("<br>");
+          }
+        }
+
+        function click1(leBoox) {
+          if (leBoox.style.background == "white") {
+            leBoox.style.background = "lightgreen";
+          } else {
+            leBoox.style.background = "white";
+          }
+
+        }
+
+        function calcuLate() {
+          var theButt = document.getElementsByName("numButt");
+          var theRes = document.getElementById("res");
+          var x = 0
+          var n = 0;
+          while (n < theButt.length) {
+            if (theButt[n].style.background == "lightgreen") {
+              x += Number(theButt[n].innerHTML);
+            }
+            n++;
+          }
+          theRes.value = x;
+        }
+
+      </script>
+
+      <br>
+      <br>
+
+      <button onClick="calcuLate();">Add</button>
+      <input id="res" value="Result">
+    </div>
+  </body>
+
+</html>

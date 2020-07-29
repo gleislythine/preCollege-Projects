@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Lesson 4: Furniture Order Form</title>
+    <link rel="stylesheet" type="text/css" href="L4FOForm Resources/L4FOForm.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <table>
+        <tr style="background-color: #7ABA71">
+          <td colspan="2">Item Description</td>
+          <td class="box">Unit Cost</td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="checkbox" id="shelf" onChange="ckChecked();addTax();grandTotal();" value="$10.00">Bookshelf</td>
+          <td class="second">Number of Shelves:
+            <input type="radio" name="shelf" id="shelf1" onChange="ckChecked();addTax();grandTotal();" value="$110.50">3
+            <input type="radio" name="shelf" id="shelf2" onChange="ckChecked();addTax();grandTotal();" value="$140.50">5
+            <input type="radio" name="shelf" id="shelf3" onChange="ckChecked();addTax();grandTotal();" value="$170.50">7
+          </td>
+          <td class="box">
+            <input type="text" id="shelfCost" class="box" readonly>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="checkbox" id="drawer" onChange="ckChecked();addTax();grandTotal();" value="$15.00">Chest of Drawers</td>
+          <td class="second">Number of Drawers:
+            <input type="radio" name="drawer" id="drawer1" onChange="ckChecked();addTax();grandTotal();" value="$205.95">3
+            <input type="radio" name="drawer" id="drawer2" onChange="ckChecked();addTax();grandTotal();" value="$235.50">5
+            <input type="radio" name="drawer" id="drawer3" onChange="ckChecked();addTax();grandTotal();" value="$278.75">7
+          </td>
+          <td class="box">
+            <input type="text" id="drawerCost" class="box" readonly>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="checkbox" id="desk" onChange="ckChecked();addTax();grandTotal()" value="$20.00">Office Desk</td>
+          <td class="second">Style:
+            <input type="radio" name="desk" id="desk1" onChange="ckChecked();addTax();grandTotal();" value="$245.50">Pine
+            <input type="radio" name="desk" id="desk2" onChange="ckChecked();addTax();grandTotal();" value="$285.75">Oak
+            <input type="radio" name="desk" id="desk3" onChange="ckChecked();addTax();grandTotal();" value="$325.95">Metal
+          </td>
+          <td class="box">
+            <input type="text" id="deskCost" class="box" readonly>
+          </td>
+        </tr>
+
+        <tr>
+          <td rowspan="3" class="void">
+            <button type="button" onclick="clearAll()" class="whitespace">Clear Form</button>
+          </td>
+          <td>Tax 12%</td>
+          <td class="box">
+            <input type="text" id="taxCost" class="box" readonly>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input type="checkbox" id="shiptax" onChange="grandTotal();">Include Shipping</td>
+          <td class="box">
+            <input type="text" id="shipCost" class="box" readonly>
+          </td>
+        </tr>
+
+        <tr>
+          <td><b>Grand Total</b></td>
+          <td class="box">
+            <input type="text" id="totalCost" class="box" style="font-weight: bold" readonly>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="L4FOForm Resources/L4FOForm.js">
+
+
+    </script>
+  </body>
+
+</html>

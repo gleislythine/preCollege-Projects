@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Lesson 6: Loop Exercise 2</title>
+    <style>
+      .numbox {
+        width: 50px;
+        height: 50px;
+        border: 0.5px solid black;
+        display: inline-block;
+        font-size: 40px;
+        text-align: center;
+        margin: 1px;
+      }
+      
+      .numbox:hover {
+        background-color: lightgray;
+      }
+      
+      .container {
+        width: 580px;
+        overflow: hidden;
+        position: absolute;
+        text-align: center;
+      }
+      
+      #res {
+        text-align: right;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <script>
+        var theButt = document.getElementsByName("numButt");
+        var theRes = document.getElementById("res");
+
+        var i = 1;
+        while (i < 51) {
+          document.writeln('<div class="numbox" name="numButt" onClick="click1(this);">0</div>');
+          i++;
+          if (i == 11) {
+            document.writeln("<br>");
+          }
+          if (i == 21) {
+            document.writeln("<br>");
+          }
+          if (i == 31) {
+            document.writeln("<br>");
+          }
+          if (i == 41) {
+            document.writeln("<br>");
+          }
+        }
+
+        function click1(leBoox) {
+          var a = 0;
+          leBoox.innerHTML = Number(leBoox.innerHTML) + 1;
+          i++;
+        }
+
+        function calcuLate() {
+          var theRes = document.getElementById("res");
+
+          var x = 0;
+          var n = 0;
+          while (n < theButt.length) {
+            x = x + Number(theButt[n].innerHTML);
+            n++;
+          }
+          theRes.value = x;
+        }
+
+        function res() {
+          var b = 0;
+          while (b < theButt.length) {
+            theButt[b].innerHTML = 0;
+            b++;
+          }
+          var theRes = document.getElementById("res").value = "0";
+        }
+
+      </script>
+
+      <br>
+      <br>
+
+      <button onClick="calcuLate();">Add</button>
+      <input id="res" value="Result.">
+      <button onClick="res();">Reset</button>
+    </div>
+  </body>
+
+</html>

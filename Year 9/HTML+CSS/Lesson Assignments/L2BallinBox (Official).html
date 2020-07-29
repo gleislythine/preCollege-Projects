@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Lesson 2: Moving Ball in Box</title>
+    <link rel="stylesheet" type="text/css" href="L2Ball2 Resources/L2Ball2.css">
+  </head>
+
+  <body>
+    <div id="wallz" class="ballnwall" style="left:50px;top:10px;width:500px;height:500px;border-radius:0px;background-color:transparent;">
+      <div id="balls" class="ballnwall" style="left:250px;top:250px;width:20px;height:20px;"></div>
+    </div>
+
+    <div class="control">
+      <div id="button">
+        <div class="button" style="bottom:58px;">
+          <button type="submit" class="direct" onclick="movesTo('U')"><img src="L2Ball2 Resources/u.png"></button>
+        </div>
+        <div class="button" style="right:34px;">
+          <button class="direct" type="button" onclick="movesTo('D')"><img src="L2Ball2 Resources/d.png"></button>
+        </div>
+        <div class="button" style="right:98px;bottom:29px;">
+          <button class="direct" type="button" onclick="movesTo('L')"><img src="L2Ball2 Resources/l.png"></button>
+        </div>
+        <div class="button" style="right:72px;bottom:29px;">
+          <button class="direct" type="button" onclick="movesTo('R')"><img src="L2Ball2 Resources/r.png"></button>
+        </div>
+      </div>
+      Move Amount:
+      <input id="userPref" type="number" value="100">
+    </div>
+
+    <script src="L2Ball2 Resources/L2Ball2.js">
+
+
+    </script>
+
+  </body>
+
+</html>

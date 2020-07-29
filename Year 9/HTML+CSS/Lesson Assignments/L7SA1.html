@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Lesson 7 Exercise 1</title>
+
+    <style>
+      #spine {
+        position: absolute;
+        width: 450px;
+        display: inline-block;
+        border: solid black 1px;
+        border-radius: 10px;
+        padding: 2%;
+        overflow: hidden;
+        background: lightgreen;
+      }
+      
+      textarea {
+        width: 100%;
+        height: 100px;
+      }
+      
+      table {
+        width: 100%;
+      }
+      
+      button {
+        width: 100%;
+        padding: 5px 10px;
+        margin-left: 2%;
+      }
+      
+      input {
+        width: 100px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="spine">
+      Input text:
+      <br>
+      <textarea id="text">There are two kinds of people: those who say to God, 'Thy will be done,' and those to whom God says, 'All right, then, have it your way.'</textarea>
+      <table>
+        <tr>
+          <td>Replace this word/letter:</td>
+          <td>
+            <input id="input1" value="">
+          </td>
+          <td>
+            <button onClick="replaceTo()">Do Replace</button>
+          </td>
+        </tr>
+        <br>
+        <tr>
+          <td>with this word/letter:</td>
+          <td>
+            <input id="input2" value="">
+          </td>
+        </tr>
+    </div>
+
+    <script>
+      function replaceTo() {
+        var par = document.getElementById("text").innerHTML;
+        var a = document.getElementById("input1").value;
+        var b = document.getElementById("input2").value;
+
+        while (par.indexOf(a) > -1) {
+          par = par.replace(a, b);
+          document.getElementById("text").innerHTML = par;
+        }
+      }
+
+    </script>
+  </body>
+
+</html>

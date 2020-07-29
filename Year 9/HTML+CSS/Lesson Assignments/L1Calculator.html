@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Lesson 1: Simple Calculator</title>
+    <link rel="stylesheet" type="text/css" href="L1Cal Resources/L1Calculator.css">
+  </head>
+
+  <body>
+    <div id="cal">
+      <h3>Simple Calculator</h3>
+      <div id="inputs">
+        Input x:
+        <input id="inputX" type="number">
+        <br> Input y:
+        <input id="inputY" type="number">
+        <hr> Result:
+        <input id="result" readonly>
+      </div>
+
+      <div id="buttons">
+        <div class="buttonbuttons">
+          <button id="add" type="button" onClick="adn()">+</button>
+        </div>
+        <div class="buttonbuttons">
+          <button id="sub" type="button" onClick="sub()">-</button>
+        </div>
+        <br>
+        <div class="buttonbuttons">
+          <button id="mul" type="button" onClick="mul()">*</button>
+        </div>
+        <div class="buttonbuttons">
+          <button id="div" type="button" onClick="div()">/</button>
+        </div>
+        <br>
+        <div class="buttonbuttons" style="width: 82%">
+          <button id="pwr" type="button" onClick="pwr()">x^y</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="L1Cal Resources/L1Calculator.js">
+
+
+    </script>
+  </body>
+
+</html>

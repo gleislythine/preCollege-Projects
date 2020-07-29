@@ -1,0 +1,50 @@
+	.container {
+	  position: absolute;
+	  overflow: hidden;
+	}
+	
+	table {
+	  border-collapse: collapse;
+	  background: #33cc33;
+	  font-family: Helvetica;
+	}
+	
+	td {
+	  width: 200px;
+	  padding: 3px;
+	}
+	
+	td.void {
+	  border-bottom: 0px hidden;
+	  border-left: 0px hidden;
+	  background: white;
+	}
+	
+	td.box {
+	  width: 100px;
+	  text-align: center;
+	}
+	
+	td.second {
+	  border-left: hidden;
+	  width: 275px;
+	}
+	
+	table,
+	tr,
+	td {
+	  border: 1px solid black;
+	  margin: 2%;
+	}
+	
+	input.box {
+	  width: 75px;
+	  text-align: right;
+	  font-family: Century Gothic;
+	}
+	
+	button.whitespace {
+	  height: 40px;
+	  margin-left: 27%;
+	  margin-right: 27%;
+	}

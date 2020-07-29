@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lesson 10 Exercise</title>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script>
+	function increase(old,inc) {
+	   var i = Number(old.replace("px", ""))+inc;
+	   return i.toString()+"px";
+	}
+	</script>
+	<style>
+	div {
+	 border: 2px solid green;
+	 position: absolute;
+	}
+	</style>
+</head>
+
+<body>
+<script>
+	function iW() {
+	var iW = document.getElementById("box");
+		iW.style.width = increase(box.style.width,50);
+	}
+	function iH() {
+	var iH = document.getElementById("box");
+		iH.style.height = increase(box.style.height,50);
+	}
+	function iL() {
+	var iL = document.getElementById("box");
+		iL.style.left = increase(box.style.left,50);
+	}
+	function iT() {
+	var iT = document.getElementById("box");
+		iT.style.top = increase(box.style.top,50);
+	}
+	
+	function dW() {
+	var dW = document.getElementById("box");
+		dW.style.width = increase(box.style.width,-50);
+	}
+	function dH() {
+	var dH = document.getElementById("box");
+		dH.style.height = increase(box.style.height,-50);
+	}
+	function dL() {
+	var dL = document.getElementById("box");
+		dL.style.left = increase(box.style.left,-50);
+	}
+	function dT() {
+	var dT = document.getElementById("box");
+		dT.style.top = increase(box.style.top,-50);
+	}
+</script>
+<div id="box" style="height: 50px; width: 200px; left: 100px; top: 70px;">RESIZE LE BOOOOOOOOOOOX</div>
+
+Width:
+<button type="button" onclick="iW()">+</button>
+<button type="button" onclick="dW()">-</button>
+
+Height:
+<button type="button" onclick="iH()">+</button>
+<button type="button" onclick="dH()">-</button>
+
+Left:
+<button type="button" onclick="iL()">+</button>
+<button type="button" onclick="dL()">-</button>
+
+Top:
+<button type="button" onclick="iT()">+</button>
+<button type="button" onclick="dT()">-</button>
+</body>
+</html>

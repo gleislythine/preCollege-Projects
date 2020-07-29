@@ -1,0 +1,97 @@
+﻿<Window x:Class="KRIRSTrial6.StudentInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KRIRSTrial6"
+        mc:Ignorable="d"
+        Title="Student Violation History " Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label x:Name="lbStudentName"             Content = "Sarmiento, Chyna Ezra S."
+                        FontFamily = "Supra"
+                          FontSize = "18"
+                            Margin = "35,15,0,0"
+                 VerticalAlignment = "Top"
+               HorizontalAlignment = "Left" Width="279"/>
+
+        <Button BorderThickness = "0"
+                         Margin = "5,16,0,0" 
+              VerticalAlignment = "Top"
+            HorizontalAlignment = "Left" 
+                          Click = "btnBackG12STEMA">
+
+            <StackPanel>
+                <Image  Source = "/KRIRSTrial6;component/Images/backarrow.ico"
+                        Height = "25"
+                         Width = "25"
+                        Margin = "0,0,0,0"
+                       Stretch = "UniformToFill"/>
+            </StackPanel>
+        </Button>
+
+        <DataGrid              x:Name = "dgs180195"
+                               Height = "289"
+                                Width = "779"
+                               Margin = "5,121,0,0"
+                    VerticalAlignment = "Top"
+                  HorizontalAlignment = "Left"
+                           IsReadOnly = "True"/>
+        <Label x:Name="lbStudentDetails" 
+            Content = "Grade 12 - Initiative (STEM A)  |  A.Y. 2018-2019&#xD;&#xA;
+Class Number: G16&#xD;&#xA;
+Student ID: 18-0195  |  email: 18-0195@sgen.edu.ph"
+            FontFamily = "Body Text Slim Light"
+            FontSize = "16"
+            Margin = "37,48,0,0"
+            VerticalAlignment = "Top"
+            HorizontalAlignment = "Left"
+                          Width = "277"
+                         Height = "73"/>
+        <Label Content="Add a Violation:" HorizontalAlignment="Left" Margin="526,15,0,0" VerticalAlignment="Top" FontFamily="Body Text Slim Light"/>
+        <Label Content="Comments:" HorizontalAlignment="Left" Margin="526,57,0,0" VerticalAlignment="Top" FontFamily="Body Text Slim Light" Width="68"/>
+        <ComboBox
+            x:Name="cbViolationSelectors"
+            HorizontalAlignment="Left"
+            Margin="599,15,0,0"
+            VerticalAlignment="Top"
+            Width="184"
+            Height="26"
+            FontFamily="Body Text Slim Light"
+            IsReadOnly="True"
+            HorizontalContentAlignment = "Center"
+            VerticalContentAlignment = "Center" SelectedIndex="0">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFEBEBEB" Offset="0"/>
+                    <GradientStop Color="Gray" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <Label Content="Select a violation"/>
+            <Label Content="Attendance"/>
+            <Label Content="Punctuality"/>
+            <Label Content="Signed Diaries"/>
+            <Label Content="Reply Slips"/>
+        </ComboBox>
+        <TextBox
+            x:Name="tbComments"
+            HorizontalAlignment="Left"
+            Margin="599,45,0,0"
+            TextWrapping="Wrap"
+            Text="Please add a violation in order to add a comment."
+            VerticalAlignment="Top"
+            Width="184"
+            Height="45"
+            FontFamily="Body Text Slim Light"
+            Background="#FFEBEBEB" GotFocus="TbComments_GotFocus" TextChanged="TbComments_TextChanged"/>
+        <Button                     x:Name = "AddEntryViolation"
+            Content = "Add Entry"
+            FontFamily = "Body Text Slim Light"
+            Height = "20"
+            Width = "70"
+            Margin = "713,96,0,0"
+            VerticalAlignment = "Top"
+            HorizontalAlignment = "Left"
+            HorizontalContentAlignment = "Center"
+            VerticalContentAlignment = "Center" Click="AddEntryViolation_Click"/>
+    </Grid>
+</Window>

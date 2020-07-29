@@ -1,0 +1,73 @@
+﻿<!--
+    Sarmiento, Chyna Ezra S.
+    March 2019
+    Key Result Indicators Report Software
+    High School Thesis
+-->
+    
+<Window        x:Name= "pgSeniorHighSchoolDepartment"
+             x:Class = "KRIRSTrial6.SeniorHighSchoolDepartment"
+                Icon = "/KRIRSTrial6;component/Images/krirslogo12.ico"
+               xmlns = "http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x = "http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d = "http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:mc = "http://schemas.openxmlformats.org/markup-compatibility/2006"
+         xmlns:local = "clr-namespace:KRIRSTrial6"
+        mc:Ignorable = "d"
+        
+                        Title = "Senior High School Department"
+        WindowStartupLocation = "CenterScreen"
+                       Height = "450"
+                        Width = "800">
+
+    <Grid Margin="0,0,0,0">
+        <Label             Content = "Senior High School Department"
+                        FontFamily = "Supra"
+                          FontSize = "18"
+                            Margin = "130,81,0,0"
+                 VerticalAlignment = "Top"
+               HorizontalAlignment = "Left"/>
+
+        <Image
+                            Height = "75"
+                             Width = "75"
+                            Margin = "50,60,0,0"
+                 VerticalAlignment = "Top"
+               HorizontalAlignment = "Left"
+                            Cursor = "None" 
+                            Source = "/KRIRSTrial6;component/Images/southvillelogo.png"/>
+
+        <Button              x:Name = "buttonGrade10" 
+                            Content = "Grade 10"
+                         FontFamily = "Body Text Slim Light"
+                           FontSize = "14"
+                             Height = "30"
+                              Width = "175"
+                             Margin = "80,200,0,0"
+                  VerticalAlignment = "Top"
+                HorizontalAlignment = "Left"
+                          IsEnabled = "False"/>
+        
+        <Button              x:Name = "buttonGrade11"
+                            Content = "Grade 11"
+                         FontFamily = "Body Text Slim Light"
+                           FontSize = "14"
+                             Height = "30"
+                              Width = "175"
+                             Margin = "310,200,0,0"
+                  VerticalAlignment = "Top"
+                HorizontalAlignment = "Left"
+                          IsEnabled = "False"/>
+
+        <Button              x:Name = "buttonGrade12"
+                            Content = "Grade 12"
+                         FontFamily = "Body Text Slim Light"
+                           FontSize = "14"
+                             Height = "30"
+                              Width = "175"
+                             Margin = "540,200,0,0"
+                  VerticalAlignment = "Top"
+                HorizontalAlignment = "Left"
+                              Click = "btnGrade12"/>
+    </Grid>
+</Window>

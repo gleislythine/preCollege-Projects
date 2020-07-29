@@ -1,11 +1,13 @@
 # Year 12 Thesis Project
 #### KRIRS (Key Result Indicator Report Software)
+KRI meaning: A key result indicator (KRI) is a metric that measures the quantitative results of business actions to help companies track progress and reach organizational goals.
+
 
 This is the Thesis Project (and Paper) that I have submitted for my High School. I was a STEM student and most people have only dedicated their work to the medical field. I thought that I would do something different. Primarily, because I love programming.
 
 Note: I would only be showcasing the software I made, and not the paper.
-
 Also that, this is the work of a 12th Grade student. ~~I had to learn SQL and C# all by myself. On the spot.~~
+
 
 But here's the gist of its purpose to give meaning to the work, without it being too overboard (omitted some texts):
 

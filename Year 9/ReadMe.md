@@ -9,8 +9,8 @@ This course's entirety is very restricted, so pardon me for how it looks like.
 I copied the exact style of how my teacher has done it.
 
 edit: awww my teacher's domain has expired
-Here's the cached link instead:
 
+Here's the cached link instead:
 [HTML/CSS](http://webcache.googleusercontent.com/search?q=cache:sUGg2QiP1NoJ:www.nasuli.com/Curriculum2014/wp1less01step01.htm)
 JavaScript (can't find a cache of it, sorry)
 

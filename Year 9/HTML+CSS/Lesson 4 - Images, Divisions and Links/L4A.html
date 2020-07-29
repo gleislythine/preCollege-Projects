@@ -1,0 +1,409 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Lesson 4 Assignment</title>
+
+<style>
+	   *
+	   	{
+		 margin: 0;
+		}
+	   html, body
+	   		 {
+			  width: 100%;
+			 }
+	   header
+	   		 {
+			  top: 0;
+			  width: 100%;
+			  height: 15%;
+			  background: black;
+			 }
+	   header h1
+	   		 {
+			  font-family: Old English Text MT;
+			  font-size: 300%;
+			  color: white;
+		  	  letter-spacing: 15px;
+			  padding: 1.5% 1.5%;
+			 }
+	   header, nav
+	   		   {
+			  	text-align: center;
+			   }
+	   nav
+	   	  {
+		   width: 100%;
+		   height: 10%;
+		   top: 15%;
+		   list-style-type: none;
+		   font-family: Century Gothic;
+		   font-variant: small-caps;
+		   letter-spacing: 5px;
+		   background-color: black;
+		  }
+	   nav a
+	   	  {
+		   display: inline-block;
+		   padding: 1.5% 1.5%;
+		   color: white;
+		   text-decoration: none;
+		  }
+	   nav a:hover
+	   	  {
+		   background-color: white;
+		   color: black;
+		   height: 40%;
+		   transition: .3s;
+		  }    				  
+	   .fixed
+	   	  {
+		   position: fixed;
+    	   width: 100%;
+		   height: 10%;
+		   top: 0;
+		   left: 0;
+		  }
+	   .active
+	   		  {
+			   color: white;
+			   height: 40%;
+			   text-decoration: underline;
+			   background-color: #F69C4E;
+			  }
+	   main
+	   	   {
+		   	position: static;
+		   	min-height: 100%;
+  			margin-bottom: -auto;
+			padding: 0;
+			font-family: Century Gothic;
+			background: black;
+			z-index: 1;
+		   }
+	   article
+	   		   {
+			   	position: static;
+			   	width: 75%;
+				margin: auto;
+			   	letter-spacing: 5px;
+				display: inline-block;
+			   }
+	   article h1
+	   		   {
+			   	width: 100%;
+				height: 10%;
+				left: 0;
+				color: white;
+				text-align: center;
+			   	font-variant: small-caps;
+			   	letter-spacing: 15px;
+				line-height: 50px;
+			   }
+	   table
+	   		   {
+			   	colspan: 2;
+			   	width: 95%;
+				margin: auto;
+			   }
+	   td
+	   	 {
+		  width: 25%;
+		  height: auto;
+		  margin-top: 0;
+		  padding: 0 5% 0;
+		 }
+	   article table h2
+	   		   {
+			   	width: 100%;
+			   	margin-top: 0;
+				text-align: center;
+				padding: 10px;
+			   }
+	   article table h2 a
+	   		   {
+			   	color: #DE8D47;
+			   	text-decoration: none;
+			   }
+	   article table h2 a:hover
+	   		   {
+			   	text-decoration: underline;
+			   }
+	   article table td p
+	   		   {
+			   	width: 100%;
+				font-family: Arial;
+				font-size: 75%;
+				color: white;
+				text-align: justify;
+				padding: 2%;
+			   }
+	   article hr
+	   		   {
+			   	border: 0;
+    			height: 1px;
+				margin-bottom: 2%;
+    			background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+			   }
+	   article table td img
+	   		   {
+				width: 100%;
+				margin-bottom: 2%;
+				line-height: 10%;
+				padding-right: 15px;
+    			vertical-align: top;
+			   }
+	   footer
+	   		 {
+			  font-family: Copperplate Gothic;
+			  color: white;
+			  text-align: center;
+			  letter-spacing: 10px;
+			  padding: 3%;
+			  background: black;
+			 }
+	   footer, main:after
+	   		   {
+			   	height: auto; 
+			   }
+	   ::-webkit-scrollbar
+	   		{
+			 border-left:0px solid;
+	   		 width: 6px;
+	   		 height: 5px;
+	   		 background: #B7B7B6;
+			}
+	   ::-webkit-scrollbar-thumb
+	   		{
+			 background: #DE8D47;
+			}
+</style>
+</head>
+
+<body>
+	  <header>
+	  		  <h1>&boxh;The Daily Chronicle&boxh;</h1>
+	  </header>
+	  
+	  <nav>
+	  	   <a href="#1">Top Stories</a>
+		   <a href="#2">World News</a>
+		   <a href="#3">Local News</a>
+		   <a href="#4">Business</a>
+		   <a href="#5">Sports</a>
+		   <a href="#6">Entertainment</a>
+		   <a href="#7">Religion</a>
+		   <a href="#8">Editorials</a>
+	  </nav>
+	  
+	  <main>
+	  <img src="http://aka-cdn-ns.adtechus.com/images/27/Ad6494235St1Sz170Sq24178385V1Id1.jpg" style="position: absolute;width:15%; margin-top: 170%; right: 0">
+	  	  <img src="https://tpc.googlesyndication.com/simgad/16331952022218028959" style="float: right;">
+		  <img src="https://s1.2mdn.net/viewad/5179318/Globe_Patrol_GDN_120x600_04games.jpg" style="float: left; display: block; margin-top:75%;">
+	  <article>
+	  		   <h1 id="1">Top Stories</h1>
+			   <hr>
+			   <table>
+			   		<td>
+					<h2><a href="http://goo.gl/7auPAg">Reporter Shot at Live!</a></h2>
+					<a href="http://goo.gl/7auPAg"><img src="http://i.imgur.com/ltdU09i.jpg"></a>
+					<p>
+					   A man who was fired from his job as a television reporter two years ago took revenge against the small-town Virginia 
+					   news station by executing two of his former coworkers on live television, and then posting disturbing first-person video 
+					   of the attack on social media.
+					</p>
+					</td>
+					
+					<td>
+					<h2><a href="http://goo.gl/H5B3Mz">Supercomputer Predicts Death</a></h2>
+				   	<a href="http://goo.gl/H5B3Mz"><img src="http://i.imgur.com/W967QcE.jpg"></a>
+					<p>
+					   Death is inevitable. But some of us would rather avoid having the date and time for when nature plans to have its way.
+				   	   A computer in Boston however, has been letting the secret slip and its predictions are (according to doctors) pretty accurate.
+					</p>
+					</td>
+			   </table>
+			   
+			   <h1 id="2">World News</h1>
+			   <hr>
+			   <table>
+			   		<td>
+					<h2><a href="https://goo.gl/rMqRah">Older than the Great Pyramids</a></h2>
+				   	<a href="https://goo.gl/rMqRah"><img src="http://i.imgur.com/D1KA01X.png"></a>
+					<p>
+					   A mysterious wooden idol found in a Russian peat bog has been dated to 11,000 years ago - and contains a code no one can decipher.	  
+					</p>
+					</td>
+					
+					<td>
+					<h2><a href="http://goo.gl/hVnIrq">Homeless Man Refer Books</a></h2>
+				   	<a href="http://goo.gl/hVnIrq"><img src="http://i.imgur.com/NRop5VQ.jpg"></a>
+					<p>
+					   Meet Philani Dladla, a.k.a. the Pavement Bookworm.
+					</p>
+					</td>
+			   </table>
+			   
+			   <h1 id="3">Local News</h1>
+			   <hr>
+			   <table>
+			   		<td>
+					<h2><a href="http://goo.gl/TMbMw2">Headaches with Unsuspected Cause</a></h2>
+				   	<a href="http://goo.gl/TMbMw2"><img src="http://i.imgur.com/ZmPVLKX.jpg"></a>
+					<p>
+					   What started as headaches turned out to be something much worse for Yadira Rostro.
+					</p>
+					</td>
+					
+					<td>
+					<h2><a href="http://goo.gl/BAvD6Q">Woman Tries to be a Man</a></h2>
+				   	<a href="http://goo.gl/BAvD6Q"><img src="http://i.imgur.com/ylPYigM.jpg"></a>
+					<p>
+					   After the judge announced the verdict, Newland reportedly yelled, "How can you send me down for something I haven't done?"
+					</p>
+					</td>
+			   </table>
+			   
+			   <h1 id="4">Business</h1>
+			   <hr>
+			   <table>
+			   		<td>
+					<h2><a href="http://goo.gl/oEvZJO">"The Trolls are Winning"</a></h2>
+					<a href="http://goo.gl/oEvZJO"><img src="http://i.imgur.com/Ig0eokp.jpg"></a>
+					<p>
+					   In an opinion piece for The Washington Post, former Reddit CEO Ellen Pao says that the "balancing act" between free expression and safety is "getting harder," and "the trolls are winning."
+					</p>
+					</td>
+					
+					<td>
+					<h2><a href="http://goo.gl/Oin0p8">The Hidden Internet</a></h2>
+					<a href="http://goo.gl/Oin0p8"><img src="http://i.imgur.com/oPQfLtS.jpg"></a>
+					<p>
+					   When most users log on to the Internet, they visit their bookmarked pages or use Google to search for sites that can provide the 
+				   	   information they're looking for.
+					</p>
+					</td>
+			   </table>
+			   
+			   <h1 id="5">Sports</h1>
+			   <hr>
+			   <table>
+			   		<td>
+					<h2><a href="http://goo.gl/PGZwWH">College Football went to Hell</a></h2>
+					<<a href="http://goo.gl/PGZwWH"><img src="http://i.imgur.com/2pHuIdF.jpg"></a>
+					<p>
+					   Two decades later, and the real world has been kind to the quarterback, even if no one can remember his name.
+					</p>
+					</td>
+					
+					<td>
+					<h2><a href="http://goo.gl/VaX5sN">17 Days in November</a></h2>
+					<a href="http://goo.gl/VaX5sN"><img src="http://i.imgur.com/hDU8Z9W.jpg"></a>
+					<p>
+					   Everything that would destroy them had already been set in motion when Gregory and Jason Halman squeezed into the narrow staircase that led to
+				   	   the tattoo parlor.
+					</p>
+					</td>
+			   </table>
+			   
+			   <h1 id="6">Entertainment</h1>
+			   <hr>
+			   <table>
+			   		<td>
+					<h2><a href="http://goo.gl/JfZTzX">The Witcher 3 Hunts Sales Surpassed</a></h2>
+					<a href="http://goo.gl/JfZTzX"><img src="http://i.imgur.com/ua2XLbW.jpg"></a>
+					<p>
+					   The Witcher 3: Wild Hunt has proven to be incredibly successful for CD Projekt RED, having sold a whopping six million copies within its first six weeks on store shelves.
+					</p>
+					</td>
+					
+					<td>
+					<h2><a href="http://goo.gl/fn9HwV">2,000 Complaints Against Comcast</a></h2>
+					<a href="http://goo.gl/fn9HwV"><img src="http://i.imgur.com/nhkpj5u.jpg"></a>
+					<p>
+					   Comcast customers filed more than 2,000 complaints against the company from April to June, according to documents released by the Federal Communications Commission.
+					</p>
+					</td>
+			   </table>
+			   
+			   <h1 id="7">Religion</h1>
+			   <hr>
+			   <table>
+			   		<td>
+					<h2><a href="http://goo.gl/cn3JxQ">Interview with a Retired Ritualist</a></h2>
+					<a href="http://goo.gl/cn3JxQ"><img src="http://i.imgur.com/MiGvA5z.jpg"></a>
+					<p>
+					   "Is that legal?" Her response was, "Yes it is, as long as it's in the womb."
+					</p>
+					</td>
+					
+					<td>
+					<h2><a href="http://goo.gl/p4iwmh">Evolution of Modern America</a></h2>
+					<a href="http://goo.gl/p4iwmh"><img src="http://i.imgur.com/NWD8uXE.jpg"></a>
+					<p>
+					   One of the meanings of the monument, Blackmore added, is to celebrate "a reconciliation of opposites"-particularly in relation to the public display of monuments of other faiths.
+					</p>
+					</td>
+			   </table>
+			   
+			   <h1 id="8">Editorials</h1>
+			   <hr>
+			   <table>
+			   		<td>
+					<h2><a href="http://goo.gl/onw2IU">Presidents Treats Us like 5-Year-Olds</a></h2>
+					<a href="http://goo.gl/onw2IU"><img src="http://i.imgur.com/yRShxtL.jpg"></a>
+					<p>
+					   This is ancient news by blog standards, but I still feel the need to comment on President Obama's singularly disingenuous remarks on Friday 
+				   	   about Edward Snowden and the surveillance state. The fact that Obama doesn't consider Snowden a patriot comes as no surprise. 
+					</p>
+					</td>
+					
+					<td>
+					<h2><a href="http://goo.gl/bBawg7">Stowaways and Crimes Aboard a Scofflaw Ship</a></h2>
+					<a href="http://goo.gl/bBawg7"><img src="http://i.imgur.com/Oh5GF0b.jpg"></a>
+					<p>
+					   The rickety raft made of empty oil drums and a wooden tabletop rolled and pitched with the waves while tied to the side of the Dona Liberta, a 370-foot cargo ship anchored far from land in the Atlantic Ocean off West Africa.
+					</p>
+					</td>
+			   </table>
+	  <img src="https://tpc.googlesyndication.com/simgad/15126870600570098484" style="float: right; width: 20%;">
+	  <img src="http://aka-cdn-ns.adtechus.com/images/28/Ad6494236St1Sz225Sq24178398V1Id1.jpg">
+	  </article>
+	  </main>
+	  <footer>
+	  		  Copyright &copy; 2015, The Daily Chronicle
+	  </footer>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+   $(document).ready(function(){
+	   $(window).scroll(function() {
+	   var a = $(window).scrollTop() == ($(document).height() *0.1);
+			 if ($(window).scrollTop() > a) {
+				 $('nav').addClass('fixed');
+			 }
+			 else {
+				 $('nav').removeClass('fixed');
+			 }
+		});
+	});
+	
+	$(function () {
+    function scrollTo(ele) {
+        $("html, body").animate({
+            scrollTop: $(ele).offset().top - $("nav").outerHeight()
+        });
+    }
+    if (window.location.hash) {
+        scrollTo(window.location.hash);
+    }
+    $("nav a[href^='#']").click(function (e) {
+        var target = $(this).attr("href");
+        scrollTo(target);
+		$(this).closest("nav a[href^='#']").addClass('active').siblings().removeClass('active');
+        e.preventDefault();
+    });
+});
+</script>
+</body>
+</html>

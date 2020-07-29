@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script type='text/javascript'>
+    $(function(){
+      $('a.tab').click(function(){
+        $('.content').hide();
+        $($(this).attr('href').toString()).show();
+      });
+    });
+  </script>
+	<meta charset="utf-8">
+	<title>Lesson 7 Assignment</title>
+	<link rel="stylesheet" type="text/css" href="L7A Resources\L7A.css">
+</head>
+
+<body>
+<header><h3 target"home">Pedagogue||Decapitation</h3></header>
+<hr>
+<iframe name="frame" background="black" align="right"frameborder="0" src="L7A Resources\Home7.html" type="text/html"></iframe>
+
+
+<div id="space">
+<div id="cssmenu">
+<ul>
+<li><a class="tab" href="L7A Resources\Home7.html" target="frame">Home</a></li>
+<li><a class="tab" href="#genres" onclick="changeZIndex(500)">Genres</a></li>
+<li><a class="tab" href="#artists" onclick="changeZIndex(500)">Artists</a></li>
+<li><a class="tab" href="#albums" onclick="changeZIndex(500)">Albums</a></li>
+</ul>
+</div>
+
+<div class="content" id="genres">
+<p>
+Jazz Fusion
+<br>
+<a href="http://www.allmusic.com/album/the-aristocrats-mw0002222791" target="frame">The Aristocrats - The Aristocrats</a>
+<br>
+<a href="http://www.allmusic.com/album/erotic-cakes-mw0001474512" target="frame">Guthrie Govan - Erotic Cakes</a>
+<br>
+<a href="http://www.allmusic.com/album/sounds-of-innocence-mw0002682450" target="frame">Kiko Loureiro - Sounds of Innocence</a>
+<br>
+<a href="http://www.allmusic.com/album/hot-rats-mw0000651162" target="frame">Frank Zappa - Hot Rats</a>
+<br>
+<a href="http://www.allmusic.com/album/jaco-pastorius-mw0000188533" target="frame">Jaco Pastorius - Jaco Pastorius</a>
+<br>
+<br>
+Progressive Metal
+<br>
+<a href="http://www.allmusic.com/album/animals-as-leaders-mw0000815011" target="frame">Animals as Leaders - Animals as Leaders</a>
+<br>
+<a href="http://www.allmusic.com/album/metropolis-pt-2-scenes-from-a-memory-mw0000251583" target="frame">Dream Theater - Metropolis Pt. 2: Scenes from a Memory</a>
+<br>
+<a href="http://www.allmusic.com/album/periphery-ii-mw0002390120" target="frame">Periphery- Periphery II: This Time It's Personal</a>
+<br>
+<a href="http://www.allmusic.com/album/the-migration-mw0002540451" target="frame">Scale the Summit - The Migration</a>
+<br>
+<a href="http://www.allmusic.com/album/the-parallax-ii-future-sequence-mw0002417464" target="frame">Between the Buried and Me - The Parallax II: Future Sequence</a>
+<br>
+<br>
+Psychedelic Rock
+<br>
+<a href="http://www.allmusic.com/album/the-doors-mw0000650088" target="frame">The Doors - The Doors</a>
+<br>
+<a href="http://www.allmusic.com/album/the-dark-side-of-the-moon-mw0000191308" target="frame">Pink Floyd - The Dark Side of the Moon</a>
+<br>
+<a href="http://www.allmusic.com/album/electric-ladyland-mw0000527658" target="frame">The Jimi Hendrix Experience - Electric Ladyland</a>
+<br>
+<a href="http://www.allmusic.com/album/maggot-brain-mw0000200912" target="frame">Funkadelic - Maggot Brain</a>
+<br>
+<a href="http://www.allmusic.com/album/disraeli-gears-mw0000650029" target="frame">Cream - Disraeli Gears</a>
+<br>
+<br>
+Deathcore
+<br>
+<a href="http://www.allmusic.com/album/soul-sphere-mw0002882822" target="frame">Born of Osiris - Soul Sphere</a>
+<br>
+<a href="http://www.allmusic.com/album/lugal-ki-en-mw0002719350" target="frame">Rings of Saturn - Lugal Ki En</a>
+<br>
+<a href="http://www.allmusic.com/album/holy-war-mw0002846979" target="frame">Thy Art is Murder - Holy War</a>
+<br>
+<a href="http://www.allmusic.com/album/my-damnation-mw0002165600" target="frame">Chelsea Grin - My Damnation</a>
+<br>
+<a href="http://www.allmusic.com/album/matriarch-mw0002835521" target="frame">Veil of Maya - Matriarch</a>
+<br>
+<br>
+Heavy Metal
+<br>
+<a href="http://www.allmusic.com/album/led-zeppelin-iv-mw0000190736" target="frame">Led Zeppelin - Led Zeppelin IV</a>
+<br>
+<a href="http://www.allmusic.com/album/machine-head-mw0000189625" target="frame">Deep Purple - Machine Head</a>
+<br>
+<a href="http://www.allmusic.com/album/paranoid-mw0000600570" target="frame">Black Sabbath - Paranoid</a>
+<br>
+<a href="http://www.allmusic.com/album/the-number-of-the-beast-mw0000044718" target="frame">Iron Maiden - The Number of the Beast</a>
+<br>
+<a href="http://www.allmusic.com/album/defenders-of-the-faith-mw0000194425" target="frame">Judas Priest - Defenders of the Faith</a>
+</p>
+</div>
+
+<!--Artists-->
+<div class="content" id="artists">
+<p>
+<a href="http://www.allmusic.com/album/animals-as-leaders-mw0000815011" target="frame">Animals as Leaders - Animals as Leaders</a>
+<br>
+<a href="http://www.allmusic.com/album/the-parallax-ii-future-sequence-mw0002417464" target="frame">Between the Buried and Me - The Parallax II: Future Sequence</a>
+<br>
+<a href="http://www.allmusic.com/album/paranoid-mw0000600570" target="frame">Black Sabbath - Paranoid</a>
+<br>
+<a href="http://www.allmusic.com/album/soul-sphere-mw0002882822" target="frame">Born of Osiris - Soul Sphere</a>
+<br>
+<a href="http://www.allmusic.com/album/my-damnation-mw0002165600" target="frame">Chelsea Grin - My Damnation</a>
+<br>
+<a href="http://www.allmusic.com/album/disraeli-gears-mw0000650029" target="frame">Cream - Disraeli Gears</a>
+<br>
+<a href="http://www.allmusic.com/album/machine-head-mw0000189625" target="frame">Deep Purple - Machine Head</a>
+<br>
+<a href="http://www.allmusic.com/album/metropolis-pt-2-scenes-from-a-memory-mw0000251583" target="frame">Dream Theater - Metropolis Pt. 2: Scenes from a Memory</a>
+<br>
+<a href="http://www.allmusic.com/album/hot-rats-mw0000651162" target="frame">Frank Zappa - Hot Rats</a>
+<br>
+<a href="http://www.allmusic.com/album/maggot-brain-mw0000200912" target="frame">Funkadelic - Maggot Brain</a>
+<br>
+<a href="http://www.allmusic.com/album/erotic-cakes-mw0001474512" target="frame">Guthrie Govan - Erotic Cakes</a>
+<br>
+<a href="http://www.allmusic.com/album/the-number-of-the-beast-mw0000044718" target="frame">Iron Maiden - The Number of the Beast</a>
+<br>
+<a href="http://www.allmusic.com/album/jaco-pastorius-mw0000188533" target="frame">Jaco Pastorius - Jaco Pastorius</a>
+<br>
+<a href="http://www.allmusic.com/album/defenders-of-the-faith-mw0000194425" target="frame">Judas Priest - Defenders of the Faith</a>
+<br>
+<a href="http://www.allmusic.com/album/sounds-of-innocence-mw0002682450" target="frame">Kiko Loureiro - Sounds of Innocence</a>
+<br>
+<a href="http://www.allmusic.com/album/led-zeppelin-iv-mw0000190736" target="frame">Led Zeppelin - Led Zeppelin IV</a>
+<br>
+<a href="http://www.allmusic.com/album/periphery-ii-mw0002390120" target="frame">Periphery - Periphery II: This Time It's Personal</a>
+<br>
+<a href="http://www.allmusic.com/album/the-dark-side-of-the-moon-mw0000191308" target="frame">Pink Floyd - The Dark Side of the Moon</a>
+<br>
+<a href="http://www.allmusic.com/album/lugal-ki-en-mw0002719350" target="frame">Rings of Saturn - Lugal Ki En</a>
+<br>
+<a href="http://www.allmusic.com/album/the-migration-mw0002540451" target="frame">Scale the Summit - The Migration</a>
+<br>
+<a href="http://www.allmusic.com/album/the-aristocrats-mw0002222791" target="frame">The Aristocrats - The Aristocrats</a>
+<br>
+<a href="http://www.allmusic.com/album/the-doors-mw0000650088" target="frame">The Doors - The Doors</a>
+<br>
+<a href="http://www.allmusic.com/album/electric-ladyland-mw0000527658" target="frame">The Jimi Hendrix Experience - Electric Ladyland</a>
+<br>
+<a href="http://www.allmusic.com/album/holy-war-mw0002846979" target="frame">Thy Art is Murder - Holy War</a>
+<br>
+<a href="http://www.allmusic.com/album/matriarch-mw0002835521" target="frame">Veil of Maya - Matriarch</a>
+</p>
+</div>
+
+<!--Albums-->
+<div class="content" id="albums">
+<p>
+<a href="http://www.allmusic.com/album/animals-as-leaders-mw0000815011" target="frame">Animals as Leaders - Animals as Leaders</a>
+<br>
+<a href="http://www.allmusic.com/album/defenders-of-the-faith-mw0000194425" target="frame">Defenders of the Faith - Judas Priest</a>
+<br>
+<a href="http://www.allmusic.com/album/disraeli-gears-mw0000650029" target="frame">Disraeli Gears - Cream</a>
+<br>
+<a href="http://www.allmusic.com/album/electric-ladyland-mw0000527658" target="frame">Electric Ladyland - The Jimi Hendrix Experience</a>
+<br>
+<a href="http://www.allmusic.com/album/erotic-cakes-mw0001474512" target="frame">Erotic Cakes - Guthrie Govan</a>
+<br>
+<a href="http://www.allmusic.com/album/holy-war-mw0002846979" target="frame">Holy War - Thy Art is Murder</a>
+<br>
+<a href="http://www.allmusic.com/album/hot-rats-mw0000651162" target="frame">Hot Rats - Frank Zappa</a>
+<br>
+<a href="http://www.allmusic.com/album/jaco-pastorius-mw0000188533" target="frame">Jaco Pastorius - Jaco Pastorius</a>
+<br>
+<a href="http://www.allmusic.com/album/led-zeppelin-iv-mw0000190736" target="frame">Led Zeppelin IV - Led Zeppelin</a>
+<br>
+<a href="http://www.allmusic.com/album/lugal-ki-en-mw0002719350" target="frame">Lugal Ki En - Rings of Saturn</a>
+<br>
+<a href="http://www.allmusic.com/album/machine-head-mw0000189625" target="frame">Machine Head - Deep Purple</a>
+<br>
+<a href="http://www.allmusic.com/album/maggot-brain-mw0000200912" target="frame">Maggot Brain - Funkadelic</a>
+<br>
+<a href="http://www.allmusic.com/album/matriarch-mw0002835521" target="frame">Matriarch - Veil of Maya</a>
+<br>
+<a href="http://www.allmusic.com/album/metropolis-pt-2-scenes-from-a-memory-mw0000251583" target="frame">Metropolis Pt. 2: Scenes from a Memory - Dream Theater</a>
+<br>
+<a href="http://www.allmusic.com/album/my-damnation-mw0002165600" target="frame">My Damnation - Chelsea Grin</a>
+<br>
+<a href="http://www.allmusic.com/album/paranoid-mw0000600570" target="frame">Paranoid - Black Sabbath</a>
+<br>
+<a href="http://www.allmusic.com/album/periphery-ii-mw0002390120" target="frame">Periphery II: This Time It's Personal - Periphery</a>
+<br>
+<a href="http://www.allmusic.com/album/soul-sphere-mw0002882822" target="frame">Soul Sphere - Born of Osiris</a>
+<br>
+<a href="http://www.allmusic.com/album/sounds-of-innocence-mw0002682450" target="frame">Sounds of Innocence - Kiko Loureiro</a>
+<br>
+<a href="http://www.allmusic.com/album/the-aristocrats-mw0002222791" target="frame">The Aristocrats - The Aristocrats</a>
+<br>
+<a href="http://www.allmusic.com/album/the-dark-side-of-the-moon-mw0000191308" target="frame">The Dark Side of the Moon - Pink Floyd</a>
+<br>
+<a href="http://www.allmusic.com/album/the-doors-mw0000650088" target="frame">The Doors - The Doors</a>
+<br>
+<a href="http://www.allmusic.com/album/the-migration-mw0002540451" target="frame">The Migration - Scale the Summit</a>
+<br>
+<a href="http://www.allmusic.com/album/the-number-of-the-beast-mw0000044718" target="frame">The Number of the Beast - Iron Maiden</a>
+<br>
+<a href="http://www.allmusic.com/album/the-parallax-ii-future-sequence-mw0002417464" target="frame">The Parallax II: Future Sequence - Between the Buried and Me</a>
+</p>
+</div>
+
+</div>
+</body>
+</html>

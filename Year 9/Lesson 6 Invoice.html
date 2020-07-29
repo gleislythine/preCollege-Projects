@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Lesson 6 Invoice</title>
+        <style>
+            body {
+                margin: auto;
+                margin-top: 5%;
+                font-family: Arial;
+                width: 50%;
+            }
+            table, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                white-space: nowrap;
+            }
+            #a {
+                background-color: LightGray;
+                width: 100%;
+            }
+            #b tr:nth-child(odd) {
+                background-color: LightBlue;
+            }
+            #b tr.q {
+                text-align: center;
+                width: 100%;
+            }
+            #b tr td {
+                width: 25%;
+            }
+            tr.q {
+                background-color: Black !important;
+                color: white;
+            }
+            .c:before {
+                content:'$';
+            }
+        </style>
+    </head>
+    
+    <body>
+        <table id="a">
+            <tr class="q">
+                <td>SELLER</td>
+                <td>BUYER</td>
+            </tr>
+            <tr>
+                <td>ABC Supplies Incorporated
+                    <br>123 Johnston Rd.
+                    <br>Magnolia City, NJ 12345</td>
+                <td>Mark Watson
+                    <br>78 Maple Hill Dr.
+                    <br>Magnolia City, NJ 12345</td>
+            </tr>
+        </table>
+        <br>
+        <table id="b">
+            <tr class="q">
+                <td style="text-align: left">Item Description</td>
+                <td>Unit Price</td>
+                <td>Quantity</td>
+                <td>Item Total</td>
+            </tr>
+            <tr>
+                <td>Mahogany Bookshelf 3'X4'</td>
+                <td>$300.00</td>
+                <td>2</td>
+                <td class="c">600.00</td>
+            </tr>
+            <tr>
+                <td>Black Swivel Officie Chair</td>
+                <td>$157.00</td>
+                <td>3</td>
+                <td class="c">471.00</td>
+            </tr>
+            <tr>
+                <td>Green Standing Lamp</td>
+                <td>$85.00</td>
+                <td>1</td>
+                <td class="c">85.00</td>
+            </tr>
+            <tr>
+                <td>Multi-Media Mini 800 Lumens Portable LED Projector</td>
+                <td>$456.00</td>
+                <td>2</td>
+                <td class="c">912.00</td>
+            </tr>
+            <tr>
+                <td>
+                    <br/>
+                </td>
+                <td>
+                    <br/>
+                </td>
+                <td>
+                    <br/>
+                </td>
+                <td>
+                    <br/>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            var tubs = document.getElementById('b').getElementsByTagName('td');
+            var sum = 0;
+            for (var i = 0; i < tubs.length; i++) {
+                if (tubs[i].className == 'c') {
+                    sum += isNaN(tubs[i].innerHTML) ? 0 : parseInt(tubs[i].innerHTML);
+                }
+            }
+            document.getElementById('b').innerHTML += '<tr><td><br/></td><td><br/></td><td><br/></td><td><br/></td></tr><tr><td rowspan="3"></td><td colspan="2">Subtotal</td><td>$' + sum.toFixed(2) + '</td></tr><tr><td colspan="2">Tax 10%</td><td>$' + (sum * 10 / 100).toFixed(2) + '</td></tr><tr class="q" style="text-align: left"><td colspan="2">Grand Total</td><td>$' + (sum + sum * 10 / 100).toFixed(2) + '</td></tr>';
+
+            $('td').filter(function() {
+                return this.innerHTML.match(/^[0-9\s\.,$]+$/);
+            }).css('text-align', 'right');
+        </script>
+    </body>
+
+</html>

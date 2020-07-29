@@ -8,4 +8,4 @@ TODO: FIND PREVIOUS PROJECTS
 - Year 9:  (HTML+CSS x javascript) Web Design projects
 - Year 10: (java) Pre-AP Computer Science projects
 - Year 11: (java) AP Computer Science projects
-- Year 12: (SQL x C#) thesis Report System project
+- Year 12: (SQL x C#) Thesis: Report System project

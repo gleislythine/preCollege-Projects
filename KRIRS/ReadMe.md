@@ -34,7 +34,7 @@ Then, the process of software design begins by:
 
    Lastly, the software product is deployed and will go through the acceptance phase by the customer’s end. The data is analysed through developing the software and meeting its software goals.
 
-###### Conclusions
+##### Conclusions
 Based on the major findings, the following are concluded:
   1. The software successfully generates an instantaneous straightforward report.
   2. Designating one main flow of data allows collaboration and reduces extended effort.

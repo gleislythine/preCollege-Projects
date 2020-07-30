@@ -5,10 +5,10 @@
 This is the Thesis Project (and Paper) that I have submitted for my High School. I was a STEM student and most people have only dedicated their work to the medical field. I thought that I would do something different. Primarily, because I love programming.
 
 Note: I would only be showcasing the software I made, and not the paper.</br>
-Also that, this is the work of a 12th Grade student. ~~I had to learn SQL and C# all by myself. On the spot.~~
+Also that, this is the work of a 12th Grade student. ~~I had a crashcourse for SQL and C#. On the spot.~~
 
 
-But here's the gist of its purpose to give meaning to the work, without it being too overboard (omitted some texts):
+Here's the snippet of my paper to capture the gist of my project's purpose to give it meaning to you, without it being too overboard (omitted some texts):
 
 ##### Statement of the Problem
 The fundamental problem in the current system’s manual processes (is that the School) uses the manual record-keeping system. It wastes a lot of paper, pens, toner and ink cartridges, and money. Generating the Key Result Indicators involves over complicated steps of receiving, inputting, and passing of data. This system is very labour intensive, does not certify that the data is always accurate, and has delayed delivery of the monthly results. This brings forth unneeded repetition of verification that can be enhanced with a simpler, more effective system.

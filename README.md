@@ -1,4 +1,4 @@
-# preCollege Projects
+# PreCollege Projects
 I have started playing with code since Year 6.</br>
 I have still yet to find my previous works.
 
